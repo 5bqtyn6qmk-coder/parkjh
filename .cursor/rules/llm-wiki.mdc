@@ -1,0 +1,15 @@
+---
+description: llm-wiki 폴더에서 마크다운 위키 유지 시 WIKI_SCHEMA.md 준수
+globs: llm-wiki/**
+alwaysApply: false
+---
+
+# LLM wiki (Karpathy 패턴)
+
+`llm-wiki/` 안에서 작업할 때는 **`llm-wiki/WIKI_SCHEMA.md`를 단일 계약**으로 따른다.
+
+- **`sources/`**: 기존 원문 수정·삭제 금지. 새 파일은 사용자가 소스 추가를 명시한 경우에만.
+- **`pages/<주제>/`**, **`_index.md`**, **`_meta/`**: 위키 본문·색인·로그. 페이지 파일명은 `pages/` 전체에서 유일, 링크는 `[[슬러그]]`. Frontmatter·태그는 스키마와 동일.
+- 인제스트 후 **`_meta/ingest-log.md`**에 블록 append.
+
+코드 작업용 규칙은 `karpathy-guidelines.mdc`와 역할이 다르다. 위키 작업만 할 때는 본 디렉터리 스키마가 우선한다.
