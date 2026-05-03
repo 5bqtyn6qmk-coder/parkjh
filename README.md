@@ -1,5 +1,7 @@
 # karpathy-workspace
 
+코딩 연습용 로컬 워크스페이스입니다. 원격 저장소 이름은 GitHub에서 `parkjh`로 두었습니다.
+
 Cursor 프로젝트 예시 폴더. 이 디렉터리를 열면 `.cursor/rules/karpathy-guidelines.mdc`가 적용됩니다.
 
 전역 규칙은 `~/.cursor/rules/karpathy-guidelines.mdc`에도 복사해 두었습니다. Cursor **Settings → Rules**에서 `karpathy-guidelines`가 보이는지 확인하세요.
